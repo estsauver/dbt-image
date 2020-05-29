@@ -1,6 +1,5 @@
 # Docker Image for DBT
 
-[![Build Status](https://travis-ci.org/davidgasquez/dbt-docker.svg?branch=master)](https://travis-ci.org/davidgasquez/dbt-docker)
 
 A Docker image for [dbt (data build tool)](https://github.com/fishtown-analytics/dbt).
 
@@ -16,9 +15,5 @@ You can run the Dockerized `dbt` command excuting the following order:
 docker run --rm -it \
     -v $PWD:/dbt \
     -v /path/to/your/profiles.yml:/root/.dbt/profiles.yml \
-    davidgasquez/dbt:latest dbt run
+    knight53/stush:dbt_img dbt run
 ```
-
-## License
-
-MIT License Copyright (c) 2018 David Gasquez
